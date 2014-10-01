@@ -1,7 +1,5 @@
 /* custom CSS stylesheet */
 
-/* custom CSS stylesheet */
-
 .top-buffer {
     margin-top:20px;
 }
@@ -46,6 +44,7 @@
     @media(max-width:2000px) {
         .canvas_container {
             margin: 0 0px;
+            height: 377px;
       
         }
         #q {
@@ -54,6 +53,3 @@
 
         }
     }
-
-
-
