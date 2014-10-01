@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Singular Cycle Company</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom_canvas.css" rel="stylesheet">
+    <script src="js/respond.min.js"></script>
+    <script src="js/jquery.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+
+<div class="container-fluid"> <!-- Container -->
+    
+<!-- Navigation -->
+        <div class="row">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Singular Cycle Company</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="divider"></li>
+                                <li><a href="bikes.html">Bikes</li>
+                                <li class="divider"></li>
+                                <li><a href="accessories.html">Accessories</a></li>
+                                <li class="divider"></li>
+                                <li><a href="parts.html">Parts</a></li>
+                            </ul>
+                    </li>
+                  </ul>
+                </div><!-- navbar collapse -->
+            </nav>
+        </div>
+<!--End Navigation -->
+    
+</div> <!-- End Container -->
+
+<body>
+    
+
+        <div class="header top-canvas-buffer">
+                <h1>customize</h1>
+        </div>
+<div class="container">   
+<div class="row">   
+<div class="col-md-8 col-sm-8">
+    <div class="canvas_container">
+            <canvas id="q" width="475" height="350" style="border:1px solid #000000;"></canvas>
+    </div>
+    </div>
+         <script>
+            // This originally sets the canvas up with image
+                var canvas = $("#q")[0]; 
+                var context = canvas.getContext("2d");
+                var img = new Image();
+                img.src = "http://sulley.cah.ucf.edu/~jo795082/singular_cycles/blue_frame.png";
+                img.onload = function() {
+                context.drawImage(img, 0, 0, 480, 320);
+                };
+              </script>
+
+ 
+<!-- begin FRAME Color Buttons -->    
+  <div class="col-med-4">
+    </br>FRAME</br>
+      <a id="a"><button type="button" class="bt btn-success btn-lg"></button></a> <!--GREEN-->
+      <a id="b"><button type="button" class="bt btn-primary btn-lg"></button></a> <!--BLUE-->
+      <a id="c"><button type="button" class="bt btn-danger btn-lg"></button></a> <!--RED-->
+      <a id="d"><button type="button" class="bt btn-info btn-lg"></button></a> <!--BABY BLUE-->
+      <a id="e"><button type="button" class="bt btn-warning btn-lg"></button></a> <!--YELLOW-->
+
+<!-- Begin FRONT Wheel Color Buttons -->
+      </br>FRONT WHEEL</br>
+      <a id="z"><button type="button" class="bt btn-success btn-lg"></button></a> <!--FRONT GREEN-->
+      <a id="y"><button type="button" class="bt btn-primary btn-lg"></button></a> <!--FRONT BLUE-->
+      <a id="x"><button type="button" class="bt btn-danger btn-lg"></button></a> <!--FRONT RED-->
+      <a id="w"><button type="button" class="bt btn-info btn-lg"></button></a> <!--FRONT BABY BLUE-->
+      <a id="v"><button type="button" class="bt btn-warning btn-lg"></button></a> <!--FRONT YELLOW-->
+
+<!-- Begin BACK Wheel Color Buttons -->
+      </br>BACK WHEEL</br>
+      <a id="f"><button type="button" class="bt btn-success btn-lg"></button></a> <!-- BACK GREEN-->
+      <a id="g"><button type="button" class="bt btn-primary btn-lg"></button></a> <!--BACK BLUE-->
+      <a id="h"><button type="button" class="bt btn-danger btn-lg"></button></a> <!--BACK RED-->
+      <a id="i"><button type="button" class="bt btn-info btn-lg"></button></a> <!--BACK BABY BLUE-->
+      <a id="j"><button type="button" class="bt btn-warning btn-lg"></button></a> <!--BACK YELLOW-->
+
+<!-- Begin SEAT Color Buttons -->
+      </br>SEAT</br>
+      <a id="l"><button type="button" class="bt btn-success btn-lg"></button></a> <!--BACK GREEN-->
+      <a id="m"><button type="button" class="bt btn-primary btn-lg"></button></a> <!--BACK BLUE-->
+      <a id="n"><button type="button" class="bt btn-danger btn-lg"></button></a> <!--BACK RED-->
+      <a id="o"><button type="button" class="bt btn-info btn-lg"></button></a> <!--BACK BABY BLUE-->
+      <a id="p"><button type="button" class="bt btn-warning btn-lg"></button></a> <!--BACK YELLOW-->
+        <div class="row top-buffer"
+        </br>
+        <button type="button" class="btn btn-danger btn-lg">BUY NOW</button>
+        </div>
+<!--End Buttons--> 
+</div>
+    
+</div>
+
+
+<!-- begin FRAME img loader-->
+
+    <!-- green frame -->
+    <script>
+           $('#a').click(function(){
+           var canvas = $('#q')[0];
+           //canvas.width = canvas.width;//blanks the canvas
+           var c = canvas.getContext("2d");
+            var img = new Image();
+            img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/green_frame.png';
+            img.onload = function(){
+            c.drawImage(img, 0, 0, 480, 320);
+           }
+           return false;
+          });
+    </script>
+  
+    <!--- blue frame -->
+    <script>
+       $('#b').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/purple_frame.png';
+        img.onload = function(){
+        c.drawImage(img, 0, 0, 480, 320);
+       }
+       return false;
+      });
+    </script>      
+  
+    <!--- red frame -->
+    <script>
+       $('#c').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/blue_frame.png';
+        img.onload = function(){
+        c.drawImage(img, 0, 0, 480, 320);
+       }
+       return false;
+      });
+    </script>
+
+    <!--- baby blue frame -->
+    <script>
+       $('#d').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/red_wheels.png';
+        img.onload = function(){
+        c.drawImage(img, 14, 113, 450.4, 182);
+       }
+       return false;
+      });
+    </script>
+
+    <!--- yellow frame -->
+    <script>
+       $('#e').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/yellow_wheels.png';
+        img.onload = function(){
+        c.drawImage(img, 14, 113, 450.4, 182);
+       }
+       return false;
+      });
+    </script> 
+
+<!-- end FRAME img loader--> 
+    
+<!-- begin FRONT WHEEL img loader-->
+
+    <!-- green wheels -->
+    <script>
+           $('#z').click(function(){
+           var canvas = $('#q')[0];
+           //canvas.width = canvas.width;//blanks the canvas
+           var c = canvas.getContext("2d");
+            var img = new Image();
+            img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/green_frame.png';
+            img.onload = function(){
+            c.drawImage(img, 0, 0, 480, 320);
+           }
+           return false;
+          });
+    </script>
+  
+    <!--- blue wheels -->
+    <script>
+       $('#y').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/purple_frame.png';
+        img.onload = function(){
+        c.drawImage(img, 0, 0, 480, 320);
+       }
+       return false;
+      });
+    </script>      
+  
+    <!--- red wheels -->
+    <script>
+       $('#x').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/blue_frame.png';
+        img.onload = function(){
+        c.drawImage(img, 0, 0, 480, 320);
+       }
+       return false;
+      });
+    </script>
+
+    <!--- baby blue wheels -->
+    <script>
+       $('#w').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/red_wheels.png';
+        img.onload = function(){
+        c.drawImage(img, 14, 113, 450.4, 182);
+       }
+       return false;
+      });
+    </script>
+
+    <!--- yellow wheels -->
+    <script>
+       $('#v').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/yellow_wheels.png';
+        img.onload = function(){
+        c.drawImage(img, 14, 113, 450.4, 182);
+       }
+       return false;
+      });
+    </script> 
+
+       
+<!-- end FRONT WHEEL img loader-->   
+
+<!-- begin BACK WHEEL img loader-->
+
+    <!-- green BACK wheels -->
+    <script>
+           $('#f').click(function(){
+           var canvas = $('#q')[0];
+           //canvas.width = canvas.width;//blanks the canvas
+           var c = canvas.getContext("2d");
+            var img = new Image();
+            img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/green_frame.png';
+            img.onload = function(){
+            c.drawImage(img, 0, 0, 480, 320);
+           }
+           return false;
+          });
+    </script>
+  
+    <!--- blue BACK wheels -->
+    <script>
+       $('#g').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/purple_frame.png';
+        img.onload = function(){
+        c.drawImage(img, 0, 0, 480, 320);
+       }
+       return false;
+      });
+    </script>      
+  
+    <!--- red BACK wheels -->
+    <script>
+       $('#h').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/blue_frame.png';
+        img.onload = function(){
+        c.drawImage(img, 0, 0, 480, 320);
+       }
+       return false;
+      });
+    </script>
+
+    <!--- baby blue BACK wheels -->
+    <script>
+       $('#i').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/red_wheels.png';
+        img.onload = function(){
+        c.drawImage(img, 14, 113, 450.4, 182);
+       }
+       return false;
+      });
+    </script>
+
+    <!--- yellow BACK wheels -->
+    <script>
+       $('#j').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/yellow_wheels.png';
+        img.onload = function(){
+        c.drawImage(img, 14, 113, 450.4, 182);
+       }
+       return false;
+      });
+    </script> 
+
+       
+<!-- end BACK WHEEL img loader--> 
+
+<!-- begin SEAT img loader-->
+
+    <!-- green SEAT -->
+    <script>
+           $('#l').click(function(){
+           var canvas = $('#q')[0];
+           //canvas.width = canvas.width;//blanks the canvas
+           var c = canvas.getContext("2d");
+            var img = new Image();
+            img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/green_frame.png';
+            img.onload = function(){
+            c.drawImage(img, 0, 0, 480, 320);
+           }
+           return false;
+          });
+    </script>
+  
+    <!--- blue SEAT -->
+    <script>
+       $('#m').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/purple_frame.png';
+        img.onload = function(){
+        c.drawImage(img, 0, 0, 480, 320);
+       }
+       return false;
+      });
+    </script>      
+  
+    <!--- red SEAT -->
+    <script>
+       $('#n').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/blue_frame.png';
+        img.onload = function(){
+        c.drawImage(img, 0, 0, 480, 320);
+       }
+       return false;
+      });
+    </script>
+
+    <!--- baby blue SEAT -->
+    <script>
+       $('#o').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/red_wheels.png';
+        img.onload = function(){
+        c.drawImage(img, 14, 113, 450.4, 182);
+       }
+       return false;
+      });
+    </script>
+
+    <!--- yellow SEAT -->
+    <script>
+       $('#p').click(function(){
+       var canvas = $('#q')[0];
+       //canvas.width = canvas.width;//blanks the canvas
+       var c = canvas.getContext("2d");
+        var img = new Image();
+        img.src = 'http://sulley.cah.ucf.edu/~jo795082/singular_cycles/yellow_wheels.png';
+        img.onload = function(){
+        c.drawImage(img, 14, 113, 450.4, 182);
+       }
+       return false;
+      });
+    </script> 
+
+       
+<!-- end SEAT img loader-->      
+
+</body>    
+</html>

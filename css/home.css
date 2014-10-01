@@ -1,0 +1,64 @@
+.navbar-brand {
+    background-color: #6bb979;
+    border: none;
+
+}
+
+.navbar-default .navbar-brand {
+     color: #ffffff;
+}
+
+.navbar-default {
+    background-color: #000b0d;
+    border:none;
+}
+
+
+
+.nav>li>a>img {
+    width: 50%;
+    padding: 0;
+}
+
+.navbar-nav>a {
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+.home-hero {
+    height:80%;
+    width: 100%;
+}
+
+.navbar-default .navbar-toggle {
+ border: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+border:none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #000b0d;
+}
+
+.thumbnail {
+    border:none;
+}
+
+
+.footer {
+    background-color: black;
+
+}
+
+
+.footer-content {
+    float: left;
+    padding-right: 40px;
+    margin-left: 40px;
+}
+
+
+
+

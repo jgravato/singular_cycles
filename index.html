@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <title>Bike Company</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
     <script src="js/respond.min.js"></script>
     <script src="js/jquery.min.js"></script>    
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+     <script src="js/main.js"></script>
+      <script src="js/plugins.js"></script>
+      <!--  <link href="css/librerie.css" rel="stylesheet">
+          <link href="css/app.css" rel="stylesheet"> -->
+    <link href="css/home.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,20 +33,13 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="bikes.html">Bikes</a></li>
+                    <li><a href="canvas.html">Customize</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li class="divider"></li>
-                                <li><a href="bikes.html">Bikes</li>
-                                <li class="divider"></li>
-                                <li><a href="accessories.html">Accessories</a></li>
-                                <li class="divider"></li>
-                                <li><a href="parts.html">Parts</a></li>
-                            </ul>
-                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  <!--  <li><a href="#"><img src="images/fb.png" class="img-responsive" alt=""></a></li>
+                    <li><a href="#"><img src="images/twitter.png" class="img-responsive" alt=""></a></li>
+                    <li><a href="#"><img src="images/pin.png" class="img-responsive" alt=""></a></li>-->
                   </ul>
                 </div><!-- navbar collapse -->
             </nav>
@@ -54,69 +52,73 @@
         <li class="divider"></li>
 
 <!-- carousel -->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              </ol>
-
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <a href="bikes.html"><img src="images/branding.png" alt=""></a>
-                  <div class="carousel-caption">
-                  </div>
-                </div>
-                <div class="item">
-                    <a href="bikes.html"><img src="images/sale.png" alt="Damn Son"></a>
-                  <div class="carousel-caption"></div>
-                </div>
-                <div class="item">
-                    <a href="bikes.html"><img src="images/limited.png" alt="Damn Son"></a>
-                  <div class="carousel-caption"></div>
-                </div>
-              </div>
-
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
-        </div>
+<!--<div class="car-descrizione col-sm-6 col-md-5">
+          <h6 class="animated fadeIn delay03"><span class="Web Design">Web Design</span> <span class="sep">/</span> <span class="Newsletter">Newsletter</span> <span class="sep">/</span> </h6>
+          <h2 class="animated fadeInLeft delay03"><a href="/en/portfolio/antico-setificio-fiorentino/">Antico Setificio Fiorentino</a></h2>
+          <p class="animated fadeIn hidden-xs delay03">A responsive website accompanied by a responsive email newsletter, to present a part of florentine tradition: the art of silk.</p>
+          <a class="btn  btn-primary animated fadeInUp hidden-xs delay03" href="/en/portfolio/antico-setificio-fiorentino/">Details</a>
+ </div>-->
+<img src="css/VeloHomeHeader6.png" class="img-responsive home-hero" alt="Responsive image">
 
 <!-- Parts -->
     <div class="container">
             <div class="row">
-                <div><li class="divider"></li></div>
-                <div class="col-md-4 col-sm-4">
+   
+                <div class="col-md-6">
                     <div class="thumbnail">
                         <a href="bikes.html"><img src="images/bike_front.png" class="img-responsive"></a>
                         <p><h2><center>Bicycles</center></h2></p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-6">
                     <div class="thumbnail">
-                        <a href="parts.html"><img src="images/part_3.png" class="img-responsive"></a>
-                        <p><h2><center>Parts</center></h2></p>
+                        <a href="bikes.html"><img src="images/bike_front.png" class="img-responsive"></a>
+                        <p><h2><center>Bikes On Sale</center></h2></p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="thumbnail">
-                        <a href="accessories.html"><img src="images/acc_2.png" class="img-responsive"></a>
-                        <p><h2><center>Accessories</center></h2></p>
-                    </div>
-                </div>    
             </div>
     </div>
     
 <!-- Footer -->
-    <div class="row">
+    <div class="row footer">
         <div class="col-md-12 col-sm-12">
-            <image src="images/banner.png" class="img-responsive"></image>
+           <footer>
+        <div class="footer-content">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#" >Search Terms</a></li>
+                <li><a href="#">Advanced Search</a></li>
+                <li><a href="#">Orders and Returns</a></li>
+                <li><a id="disclaimer" href="#">This site is not official <br > and is an assignment for a UCF Digital Media course</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h4>Why buy from us</h4>
+            <ul>
+                <li><a href="#">Shipping &amp; Returns</a></li>
+                <li><a href="#">Secure Shopping</a></li>
+                <li><a href="#">International Shipping</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Group Sales</a></li>
+            </ul>
+        </div>
+            <div class="footer-content">
+            <h4>My account</h4>
+            <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+            </form>
+    </footer>
         </div>
     </div>
     <div>

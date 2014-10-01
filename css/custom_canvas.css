@@ -1,0 +1,59 @@
+/* custom CSS stylesheet */
+
+/* custom CSS stylesheet */
+
+.top-buffer {
+    margin-top:20px;
+}
+
+.top-buffer-large {
+    margin-top:40px;
+}
+
+
+.bottom-buffer{
+    margin-bottom:20px;
+}
+
+.top-canvas-buffer{
+    margin-top:100px;
+}
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+
+    }
+    .canvas_container {
+        
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    #q {
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+
+
+
+    }
+
+    @media(max-width:2000px) {
+        .canvas_container {
+            margin: 0 0px;
+      
+        }
+        #q {
+            width: 100%;
+            height: auto;
+
+        }
+    }
+
+
+
