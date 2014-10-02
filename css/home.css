@@ -108,9 +108,14 @@ background-color: #000b0d;
     color: #6bb979;
 }
 
+.navbar-default .navbar-nav>li>a {color: #aaaaaa;}
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 color: #ffffff;
 
 }
+
+/* made footer headings and links a little lighter jg */
+.footer-content>h4 {color: #eeeeee;}
+.footer-content>ul>li>a {color: #999999;}
 
