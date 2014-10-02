@@ -53,7 +53,7 @@ background-color: #000b0d;
 
 .thumbnail:hover {
     color: #6bb979;
-
+    transform: scale(1);
 }
 
 
