@@ -58,7 +58,31 @@
           <p class="animated fadeIn hidden-xs delay03">A responsive website accompanied by a responsive email newsletter, to present a part of florentine tradition: the art of silk.</p>
           <a class="btn  btn-primary animated fadeInUp hidden-xs delay03" href="/en/portfolio/antico-setificio-fiorentino/">Details</a>
  </div>-->
-<img src="css/VeloHomeHeader6.png" class="img-responsive home-hero" alt="Responsive image">
+
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+         <img src="images/home-hero2.jpg" class="img-responsive home-hero" alt="Responsive image">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>How will you ride next time?</h1>
+              <p>Personalize your bike. Your style. <span class="cap1">Your ride.</span></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Customize</a></p>
+            </div>
+          </div>
+        </div>
+        
+    </div>
 
 <!-- Parts -->
     <div class="container">
@@ -83,6 +107,7 @@
     <div class="row footer">
         <div class="col-md-12 col-sm-12">
            <footer>
+    <div class=".col-xs-6 .col-md-4">
         <div class="footer-content">
             <h4>Information</h4>
             <ul>
@@ -93,10 +118,11 @@
                 <li><a href="#" >Search Terms</a></li>
                 <li><a href="#">Advanced Search</a></li>
                 <li><a href="#">Orders and Returns</a></li>
-                <li><a id="disclaimer" href="#">This site is not official <br > and is an assignment for a UCF Digital Media course</a></li>
 
             </ul>
         </div>
+    </div>
+    <div class=".col-xs-6 .col-md-4">
         <div class="footer-content">
             <h4>Why buy from us</h4>
             <ul>
@@ -107,6 +133,8 @@
                 <li><a href="#">Group Sales</a></li>
             </ul>
         </div>
+    </div>
+    <div class=".col-xs-6 .col-md-4">
             <div class="footer-content">
             <h4>My account</h4>
             <ul>
@@ -117,7 +145,16 @@
                 <li><a href="#">Help</a></li>
             </ul>
         </div>
+    </div>
+      <div class="footer-content">
+            <h4 class="news_title"> Newsletter</h4>
+            <form action="#" method="post" id="newsletter-validate-detail">
+                <div class="input-box">
+                <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email"/>
+                <button type="submit" title="Subscribe" class="newsbutton"><span><span>Subscribe</span></span></button>
+                </div>
             </form>
+        </div>
     </footer>
         </div>
     </div>

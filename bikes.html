@@ -9,6 +9,7 @@
     <script src="js/respond.min.js"></script>
     <script src="js/jquery.min.js"></script>    
     <script src="js/bootstrap.min.js"></script>
+    <link href="css/home.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,6 +17,7 @@
     <div class="container-fluid">
 
 <!-- Navigation -->
+ <div class="container-fluid">
         <div class="row">
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
@@ -29,24 +31,18 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bikes.html">Bikes</a></li>
+                    <li><a href="canvas.html">Customize</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li class="divider"></li>
-                                <li class="active"><a href="bikes.html">Bikes</li>
-                                <li class="divider"></li>
-                                <li><a href="accessories.html">Accessories</a></li>
-                                <li class="divider"></li>
-                                <li><a href="parts.html">Parts</a></li>
-                            </ul>
-                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  <!--  <li><a href="#"><img src="images/fb.png" class="img-responsive" alt=""></a></li>
+                    <li><a href="#"><img src="images/twitter.png" class="img-responsive" alt=""></a></li>
+                    <li><a href="#"><img src="images/pin.png" class="img-responsive" alt=""></a></li>-->
                   </ul>
-                </div>
+                </div><!-- navbar collapse -->
             </nav>
         </div>
+    </div>
 <!--End Navigation -->
     
     <div><li class="divider"></li></div>
@@ -96,15 +92,62 @@
     </div>
 
 <!--Footer -->   
-    <div class="row">
+ <div class="row footer">
         <div class="col-md-12 col-sm-12">
-            <image src="images/banner.png" class="img-responsive"></image>
+           <footer>
+    <div class=".col-xs-6 .col-md-4">
+        <div class="footer-content">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#" >Search Terms</a></li>
+                <li><a href="#">Advanced Search</a></li>
+                <li><a href="#">Orders and Returns</a></li>
+
+            </ul>
         </div>
     </div>
+    <div class=".col-xs-6 .col-md-4">
+        <div class="footer-content">
+            <h4>Why buy from us</h4>
+            <ul>
+                <li><a href="#">Shipping &amp; Returns</a></li>
+                <li><a href="#">Secure Shopping</a></li>
+                <li><a href="#">International Shipping</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Group Sales</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class=".col-xs-6 .col-md-4">
+            <div class="footer-content">
+            <h4>My account</h4>
+            <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+      <div class="footer-content">
+            <h4 class="news_title"> Newsletter</h4>
+            <form action="#" method="post" id="newsletter-validate-detail">
 
-<footer>
-<h6><center>©2014 SINGULAR BICYCLES COMPANY | EDUCATIONAL PURPOSES ONLY</center></h6>
-</footer>
+                <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email"/>
+                <input type="submit" title="Subscribe" class="newsbutton" value="Subscribe"/>
 
+            </form>
+        </div>
+    </footer>
+        </div>
+    </div>
+    <div>
+        <h6><center>©2014 SINGULAR CYCLE COMPANY | EDUCATIONAL PURPOSES ONLY</center></h6>
+    </div>
 </body>
 </html>

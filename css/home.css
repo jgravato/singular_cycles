@@ -4,6 +4,11 @@
 
 }
 
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+color: #ffffff;
+background-color: #5a9e66
+}
+
 .navbar-default .navbar-brand {
      color: #ffffff;
 }
@@ -43,22 +48,69 @@ background-color: #000b0d;
 }
 
 .thumbnail {
-    border:none;
+    border:none
+}
+
+.thumbnail:hover {
+    color: #6bb979;
+
 }
 
 
 .footer {
     background-color: black;
+    padding-bottom: 40px;
+    padding-left: 40px;
 
 }
-
 
 .footer-content {
     float: left;
-    padding-right: 40px;
-    margin-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    list-style: none;
+    text-decoration: none;
+    padding-right: 80px;
+}
+
+.footer-content ul {
+    padding: 0;
+    list-style: none;
+ 
+}
+
+.footer-content a {
+    color: #777;
+    font-size: 16px;
+}
+
+.newsbutton {
+    background-color: #6bb979;
+    border: 0; 
+    color: #ffffff;
+}
+
+.carousel-caption {
+    margin-bottom: 180px;
+    font-family: arial;
+
+}
+
+.cap1 {
+    font-style: italic;
+    color: #6bb979;;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid #6bb979;
+    border-radius: 0;
+    color: #6bb979;
 }
 
 
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+color: #ffffff;
 
+}
 
