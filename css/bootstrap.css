@@ -1406,7 +1406,7 @@ pre code {
     width: 970px;
   }
 }
-@media (min-width: 1200px) {
+@media only screen (min-width: 1200px) and (max-width: 2000px) {
   .container {
     width: 1170px;
   }
@@ -1416,6 +1416,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  min-height: 50px;
+  background-color: #f8f8f8;
 }
 .row {
   margin-right: -15px;
@@ -3156,6 +3158,7 @@ tbody.collapse.in {
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
+    list-style: none;
 }
 .dropdown-menu > li > a {
   display: block;
@@ -4094,6 +4097,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
+  margin: 0 auto;
+  max-width: 1170px;
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -4248,6 +4253,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
     background-color: #080808;
+      list-style: none;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #777;

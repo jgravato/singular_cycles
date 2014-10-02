@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -10,51 +9,13 @@
     <script src="js/jquery.min.js"></script>    
     <script src="js/bootstrap.min.js"></script>
 </head>
-
 <body>
-
-<!-- Navigation -->
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="index.html">Singular Cycle Company</a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li class="divider"></li>
-                                <li><a href="bikes.html">Bikes</li>
-                                <li class="divider"></li>
-                                <li><a href="accessories.html">Accessories</a></li>
-                                <li class="divider"></li>
-                                <li><a href="parts.html">Parts</a></li>
-                            </ul>
-                    </li>
-                  </ul>
-                </div><!-- navbar collapse -->
-            </nav>
-        </div>
+	<div class="container-fluid">
+    <?php include 'header.php';?>
     </div>
-<!--End Navigation -->
-    
-    <div class="row">
-        <li class="divider"></li>
-        <li class="divider"></li>
-
-<!-- carousel -->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<div class="container">
+		<div class="row">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
               <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0"></li>
@@ -87,10 +48,7 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
               </a>
         </div>
-
-<!-- Parts -->
-    <div class="container">
-            <div class="row">
+        <div class="row">
                 <div><li class="divider"></li></div>
                 <div class="col-md-4 col-sm-4">
                     <div class="thumbnail">
@@ -111,17 +69,13 @@
                     </div>
                 </div>    
             </div>
-    </div>
-    
-<!-- Footer -->
-    <div class="row">
-        <div class="col-md-12 col-sm-12">
-            <image src="images/banner.png" class="img-responsive"></image>
-        </div>
-    </div>
-    <div>
-        <h6><center>©2014 SINGULAR CYCLE COMPANY | EDUCATIONAL PURPOSES ONLY</center></h6>
-    </div>
-
-</body>    
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <image src="images/banner.png" class="img-responsive"></image>
+                </div>
+                <h6><center>©2014 SINGULAR CYCLE COMPANY | EDUCATIONAL PURPOSES ONLY</center></h6>
+            </div>
+		</div>
+	</div>
+</body>
 </html>

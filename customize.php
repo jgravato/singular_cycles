@@ -21,37 +21,7 @@ Jonathan Gravato
 <div class="container-fluid"> <!-- Container -->
     
 <!-- Navigation -->
-        <div class="row">
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="index.html">Singular Cycle Company</a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li class="divider"></li>
-                                <li><a href="bikes.html">Bikes</li>
-                                <li class="divider"></li>
-                                <li><a href="accessories.html">Accessories</a></li>
-                                <li class="divider"></li>
-                                <li><a href="parts.html">Parts</a></li>
-                            </ul>
-                    </li>
-                  </ul>
-                </div><!-- navbar collapse -->
-            </nav>
-        </div>
+        <?php include 'includes/header.php';?>
 <!--End Navigation -->
     
 </div> <!-- End Container -->
@@ -64,10 +34,10 @@ Jonathan Gravato
         </div>
 <div class="container">   
 <div class="row">   
-<div class="col-md-8 col-sm-8">
-    <div class="canvas_container">
+    <div class="col-md-8 col-sm-8">
+        <div class="canvas_container">
             <canvas id="q" width="800" height="413" style="border:1px solid #000000;"></canvas>
-    </div>
+        </div>
     </div>
          <script>
             // This originally sets the canvas up with image
@@ -133,7 +103,22 @@ Jonathan Gravato
         </div>
 <!--End Buttons--> 
 </div>
-    
+   
+        <div><li class="divider"></li></div>
+        <div><li class="divider"></li></div>
+   
+    <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <image src="images/banner.png" class="img-responsive"></image>
+            </div>
+        </div>
+
+    <footer>
+        <h6><center>©2014 SINGULAR BICYCLES COMPANY | EDUCATIONAL PURPOSES ONLY</center></h6>
+        </footer>
+    </div>
+
+
 </div>
 
 
