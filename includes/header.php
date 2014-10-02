@@ -25,6 +25,7 @@
                                 <li class="active"><a href="parts.php">Parts</a></li>
                             </ul>
                     </li>
+                    <li><a href="customize.php">Customize</a></li>
                   </ul>
                 </div>
             </nav>
